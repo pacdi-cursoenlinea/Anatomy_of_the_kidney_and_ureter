@@ -1,0 +1,343 @@
+/*  =================================================
+
+     Fichero: content.css
+     Proyecto: cedec- Nueva plantilla para exeLearning
+     Autores: Mercedes Cotelo Lois / Antonio Monje Fernández / Francisco Javier Pulido Cuadrado
+     Fecha: Mayo 2011
+     Descripcion: Hoja de estilos principal
+     Company:   cedec - Centro Nacional de desarrollo Curricular en Sistemas No propietarios.
+     Referencias: Obra derivada de (ver config.xml)
+
+   ================================================== */
+
+body,html  {
+    background-color:#fff;
+    color:#646464;
+    font-family:Berlin Sans FB,Arial, Helvetica, Verdana, sans-serif !important;
+    line-height: 100%;
+}
+
+body {
+    font-size:1.3em;
+}
+
+h1, h2, h3, h4, h5 {
+	margin:0;
+	padding:0;
+	line-height: 120%;
+}
+
+p {
+	margin:.7em 0;
+}
+
+a:link,
+a:active,
+a:visited {
+	color:#6c1111;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#6c1111;
+	text-decoration:underline;
+}
+
+img {
+	margin:0 5px -3px 5px;
+}
+
+a img {
+	border:0;
+	margin:0
+}
+
+/*Tablas*/
+table {
+	margin:10px;
+	border-collapse:collapse;
+	padding:3px;
+}
+
+table[align="center"] {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+td {
+	border:0 solid;
+	border-color:inherit;
+	border-collapse:collapse;
+	padding:3px;
+}
+
+/* PARA QUE AL EXPORTAR SE QUITEN LOS BORDES DE LAS PREGUNTAS */
+.question table {
+	border:0;
+}
+
+.question td {
+	border:0;
+}
+
+/* Formato para las listas */
+/* Cambio el icono para las listas si numerar */
+ul li {
+	list-style-image:url(bullet.gif);
+	list-style-position:outside;
+}
+
+/* Cita con autoría */
+.styled-qc{margin-top:2.5em}
+.styled-qc:before{top:0}
+
+/* Estilo para el título del NODO, que es cada una de las entradas
+de la jerarquía de contenidos que crearemos con eXe */
+#main {
+	position:relative;
+}
+
+#nodeTitle {
+  background:linear-gradient(#ffffff, #A2DDD5);
+	color:#000000;
+	background-color:#fff;
+	font-size:30px;
+  font-weight: normal !important;
+	line-height:30px;
+	border-bottom:3px solid #000000;
+	padding-top:1px;
+	padding-bottom:5px;
+	padding-right:80px;
+  padding-left: 20px;
+}
+
+#nodeDecoration{
+    text-align:left;
+}
+
+/* Cabecera para cuando exportemos a web sola para imprimir */
+#header{height:49px;background:url(my_header.jpg) no-repeat 0 0;padding:59px 0 0 10px;font-size:1.7em;font-weight: normal !important;}
+
+/* IDEVICES */
+
+.iDeviceTitle{top:-11;font-size:1.7em; font-weight: lighter;}
+.iDevice_header{background-position:0 0}
+/* Añadir algún contenido después del contenido del iDevice, hace que el alto del iDevice
+   se adapte al elemento más alto del contenido. Así se evita que las imágenes muy alargadas
+   sobresalgan por debajo */
+.iDevice_content{overflow:auto}
+
+/* SCORM y otros comparten apariencia: esta es la apariencia por defecto */
+/* El encabezado de los iDevices con imagen de fondo no debe ser mayor que
+   el alto de la imagen de fondo, o saldrán huecos
+   imagen (70px) = alto (20px) + padding (2 * 25px) */
+.emphasis1 .iDevice_header{
+    background:url(icon_question.gif) no-repeat 0 0;
+    padding:25px 25px 25px 100px;
+    color:#000000;
+    max-height: 20px;
+    font-weight: normal !important;
+}
+.iDevice.emphasis1{
+    background:linear-gradient(#ffffff, #014FBB);
+    margin:40px auto;
+    font-weight: normal !important;
+    width:95%;
+}
+.emphasis1 .iDevice_inner{
+    background:#FCFCFC no-repeat right bottom;
+}
+.emphasis1 .iDevice_content_wrapper{
+    background:#FCFCFC no-repeat right bottom;
+    padding:20px 30px 55px 30px;
+}
+
+/* Actividad */
+.activityIdevice .iDevice_header{
+    background:url(icon_activity.gif) no-repeat 0 0;
+    padding:25px 25px 25px 100px;
+    margin-left:-3px;
+    max-height: 20px;
+    font-weight: normal !important;
+    border-bottom:3px solid #000000;
+}
+.activityIdevice .iDevice{
+    background:linear-gradient(#ffffff, #014FBB);
+}
+.activityIdevice .iDevice_inner{
+    background:#FCFCFC no-repeat right bottom;
+}
+.activityIdevice .iDevice_content_wrapper{
+    background:#FCFCFC no-repeat right bottom;
+    padding:20px 30px 55px 30px;
+}
+
+/* Actividad de lectura */
+.readingIdevice .iDevice_header{
+    background:url(icon_reading.gif) no-repeat 0 0;
+    color:#000000;
+    margin-left:-6px;
+    padding-top:35px;
+    border-bottom:3px solid #000000;
+}
+.readingIdevice .iDevice{
+    background:linear-gradient(#ffffff, #014FBB);
+}
+.readingIdevice .iDevice_inner{
+    background:#FCFCFC no-repeat right bottom;
+}
+.readingIdevice .iDevice_content_wrapper{
+    background:#FCFCFC no-repeat right bottom;;
+}
+
+/* Conocimiento previo */
+.preknowledgeIdevice .iDevice_header{
+    background:url(icon_preknowledge.gif) no-repeat 0 0;
+    color:#000000;
+    margin-left:-6px;
+    padding-top:30px
+}
+.preknowledgeIdevice .iDevice{
+    background:#FEE8F8 url(sup_der_preknowledge.gif) no-repeat right 0;
+}
+.preknowledgeIdevice .iDevice_inner{
+    background:url(inf_der_preknowledge.gif) no-repeat right bottom;
+}
+.preknowledgeIdevice .iDevice_content_wrapper{
+    background:url(inf_izq_preknowledge.gif) no-repeat 0 bottom;
+}
+
+/* Objetivos */
+.objectivesIdevice .iDevice_header{
+    background:url(icon_objectives.gif) no-repeat 0 0;
+    color:#000000;
+    margin-left:-5px;
+    padding-top:32px
+}
+.objectivesIdevice .iDevice{
+    background:#fcfbf7 url(sup_der_objectives.gif) no-repeat right 0;
+}
+.objectivesIdevice .iDevice_inner{
+    background:url(inf_der_objectives.gif) no-repeat right bottom;
+}
+.objectivesIdevice .iDevice_content_wrapper{
+    background:url(inf_izq_objectives.gif) no-repeat 0 bottom;
+}
+
+/* Caso práctico */
+.CasestudyIdevice .iDevice_header{
+    background:url(icon_casestudy.gif) no-repeat 0 0;
+    color:#000000;
+    margin-left:-6px;
+    padding-top:30px;
+    border-bottom:3px solid #000000;
+}
+.CasestudyIdevice .iDevice{
+      background:linear-gradient(#ffffff, #014FBB);
+}
+.CasestudyIdevice .iDevice_inner{
+    background:#FCFCFC no-repeat right bottom;
+}
+.CasestudyIdevice .iDevice_content_wrapper{
+    background:#FCFCFC no-repeat right bottom;
+}
+
+/* Galería */
+.GalleryIdevice .iDevice{
+    width:100%
+}
+.GalleryIdevice .iDevice_header{
+    background:url(icon_gallery.gif) no-repeat 0 0;
+    color:#2C8384;
+    padding:15px 25px 35px 100px;
+}
+.GalleryIdevice .iDevice{
+    background:url(sup_der_gallery.gif) no-repeat right 0;
+}
+.GalleryIdevice .iDevice_inner{
+    background:#E2DFF0 url(inf_der_gallery.gif) no-repeat right bottom;
+}
+.GalleryIdevice .iDevice_content_wrapper{
+    background:url(inf_izq_galeria.gif) no-repeat 0 bottom;
+}
+
+/* Reflexión */
+.ReflectionIdevice .iDevice_header{
+    background:url(icon_reflection.gif) no-repeat 0 0;
+    color:#2C8384;
+    margin-left:-6px
+}
+.ReflectionIdevice .iDevice{
+    background:url(sup_der_reflection.gif) no-repeat right 0;
+}
+.ReflectionIdevice .iDevice_inner{
+    background:#E2DFF0 url(inf_der_reflection.gif) no-repeat right bottom;
+}
+.ReflectionIdevice .iDevice_content_wrapper{
+    background:url(inf_izq_reflection.gif) no-repeat 0 bottom;
+}
+
+/* Download package iDevice */
+.download-packageIdevice .exe-download-package-link a{
+	background:#BE4D4C
+}
+
+/* Navegación iDevice */
+.toggle-idevice{display:block;margin:0;text-align:right}
+.iDevice_header .toggle-idevice{line-height:25px;position:absolute;top:53px;right:8px}
+.toggle-idevice a{display:inline-block;width:25px;height:25px;background:url(_style_icons.png) no-repeat 0 -200px;outline:none}
+.toggle-em0 a{background-position:0 -300px}
+.toggle-idevice .show-idevice{background-position:-100px -200px}
+.toggle-em0 .show-idevice{background-position:-100px -300px}
+
+.toggle-idevice span{position:absolute;overflow:hidden;clip:rect(0,0,0,0);height:0}
+
+/* Retroalimentaciones */
+.feedback {
+	border:1px dashed #4E4E4E;
+	color:#4E4E4E;
+	background-color:#fff;
+	padding:5px;
+	margin:5px;
+	font-size:1em;
+  font-family:Verdana,Arial, Helvetica, sans-serif;
+	height:auto !important;
+	*height:auto !important;
+	*height:0;
+	margin-bottom:5px;
+	overflow-y:auto;
+}
+
+/* Formularios y botones*/
+input {
+  font-weight: normal;
+	color:inherit;
+	border-color:inherit;
+	border-style:solid;
+	border-width:1px;
+}
+
+select {
+  font-weight: normal;
+	color:inherit;
+	border-color:inherit;
+	border-style:solid;
+	border-width:1px;
+}
+
+/* Sugerencias y ayudas pedagógicas */
+.popupDiv {
+	background-color:#fff;
+	border:2px solid #607489;
+	padding:4px;
+	margin-left:15px;
+	text-align:left;
+}
+
+.popupDivLabel {
+	text-align:center;
+	font:message-box;
+	color:#bd4949;
+	margin:4px;
+	background-color:#F00;
+}

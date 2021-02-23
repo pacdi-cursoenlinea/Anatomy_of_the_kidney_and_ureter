@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<theme>
+    <name>PACDI</name>
+    <version>2020</version>
+    <compatibility>2.4</compatibility>
+    <author>Programador: Eduardo Abraham Lopez Galvez / Apoyo en diseño diseño: Cristina Bañuelos Melero </author>
+    <license>Creative Commons by-sa</license>
+	<license-url>http://creativecommons.org/licenses/by-sa/3.0/</license-url>
+	<description>
+        http://creativecommons.org/licenses/by-sa/3.0/es/
+
+        Programador CSS
+          Eduardo Abraham Lopez Galvez
+
+        Diseño gráfico
+        Cristina Bañuelos Melero
+
+        Diseño adaptativo ("responsive design") copy of CARM style
+
+
+        Trabajo derivado de: diseño CARM
+
+        Este estilo para eXelearning ha sido desarrollado bajo Licencia Reconocimiento-Compartir igual 3.0 España License de Creative Commons.
+
+        http://creativecommons.org/licenses/by-sa/3.0/es/
+
+        Usted es libre de:
+
+             1.- Copiar, distribuir y comunicar públicamente la obra
+             2.- Remezclar — transformar la obra
+             3.- Hacer un uso comercial de esta obra
+
+        Bajo las condiciones siguientes:
+
+             1.- Reconocimiento. Debe reconocer los créditos de la obra de la manera especificada por el autor o el licenciador (pero no de una manera que sugiera que tiene su apoyo o apoyan el uso que hace de su obra).
+             2.- Compartir bajo la misma licencia. Si altera o transforma esta obra, o genera una obra derivada, sólo puede distribuir la obra generada bajo una licencia idéntica a ésta.
+    </description>
+    <extra-head><![CDATA[<meta name="viewport" content="width=device-width, initial-scale=1" />
+    ]]></extra-head>
+    <extra-body><![CDATA[<script type="text/javascript" src="_carm_js.js"></script>]]></extra-body>
+</theme>
